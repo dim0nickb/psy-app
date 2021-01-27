@@ -12,7 +12,7 @@
     "copy": "cp -r dist/psy-app/* /home/dim0nickb/www/sites/psyapp.freetoolsandgames.online/",
     "deploy": "npm run build-aot && npm run copy",
     "build-aot-ghp": "ng build --aot --prod --output-path docs --base-href /psy-app/",
-    "deploy-ghp": "npm run build-aot-ghp && cp docs/index.html docs/404.html && git add . && git commit -m 'deploy' && git push && git checkout gh-pages && git merge --no-ff master && git push && git checkout master"
+    "deploy-ghp": "npm run build-aot-ghp && cp docs/index.html docs/404.html && git add . && git commit -m 'deploy' && git push"
   },
   "private": true,
   "dependencies": {
